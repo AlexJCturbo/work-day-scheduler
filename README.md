@@ -11,7 +11,7 @@
 
 ## Project Description
 
-The project is a calendar application that allows the user to save events for each hour of the day. The app runs in the browser and features dynamically updated HTML and CSS powered by jQuery.
+The Work Day Scheduler is a calendar applicationthat that allows the user to save events for each hour of the day. The app runs in the browser and features dynamically updated HTML and CSS powered by jQuery.
 
 The application uses Moment.js to work with date and time.
 
