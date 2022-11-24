@@ -13,6 +13,10 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- CSS -->
   <link rel="stylesheet" href="./assets//css/style.css" />
@@ -33,7 +37,7 @@
         <p>9:00 am</p>
       </div>
       <textarea class="taskText form-label col-7 border-top border-dark" placeholder="Schedule input"></textarea>
-      <button type="button" class="saveBtn col-2">💾</button>
+      <button type="button" title="9am" class="saveBtn col-2 pt-2 fa-solid fa-floppy-disk fa-3x"></button>
     </div>
 
     <div class="row time-block">
@@ -41,64 +45,72 @@
         <p>10:00 am</p>
       </div>
       <textarea class="taskText form-label col-7 border-top border-dark" placeholder="Schedule input"></textarea>
-      <button type="button" class="saveBtn col-2">💾</button>
+      <button type="button" title="10am" class="saveBtn col-2 pt-2 fa-solid fa-floppy-disk fa-3x"></button>
     </div>
 
     <div class="row time-block">
-      <div class="hour col-3">
-        <p class="scheduleHours" id="11">11:00 am</p>
+      <div class="hour col-3 scheduleHours" id="11">
+        <p>11:00 am</p>
       </div>
-      <input name="task" class="col-7 bg-danger text-light" placeholder="Schedule input">
-      <button type="button" class="saveBtn col-2">💾</button>
+      <textarea class="taskText form-label col-7 border-top border-dark" placeholder="Schedule input"></textarea>
+      <button type="button" title="11am" class="saveBtn col-2 pt-2 fa-solid fa-floppy-disk fa-3x"></button>
     </div>
+
     <div class="row time-block">
-      <div class="hour col-3">
-        <p class="scheduleHours" id="12">12:00 pm</p>
+      <div class="hour col-3 scheduleHours" id="12">
+        <p>12:00 pm</p>
       </div>
-      <input name="task" class="col-7" placeholder="Schedule input">
-      <button type="button" class="saveBtn col-2">💾</button>
+      <textarea class="taskText form-label col-7 border-top border-dark" placeholder="Schedule input"></textarea>
+      <button type="button" title="12pm" class="saveBtn col-2 pt-2 fa-solid fa-floppy-disk fa-3x"></button>
     </div>
+
     <div class="row time-block">
-      <div class="hour col-3">
-        <p class="scheduleHours" id="13">1:00 pm</p>
+      <div class="hour col-3 scheduleHours" id="13">
+        <p>1:00 pm</p>
       </div>
-      <input name="task" class="col-7" placeholder="Schedule input">
-      <button type="button" class="saveBtn col-2">💾</button>
+      <textarea class="taskText form-label col-7 border-top border-dark" placeholder="Schedule input"></textarea>
+      <button type="button" title="1pm" class="saveBtn col-2 pt-2 fa-solid fa-floppy-disk fa-3x"></button>
     </div>
+
     <div class="row time-block">
-      <div class="hour col-3">
-        <p class="scheduleHours" id="14">2:00 pm</p>
+      <div class="hour col-3 scheduleHours" id="14">
+        <p>2:00 pm</p>
       </div>
-      <input name="task" class="col-7" placeholder="Schedule input">
-      <button type="button" class="saveBtn col-2">💾</button>
+      <textarea class="taskText form-label col-7 border-top border-dark" placeholder="Schedule input"></textarea>
+      <button type="button" title="2pm" class="saveBtn col-2 pt-2 fa-solid fa-floppy-disk fa-3x"></button>
     </div>
+
     <div class="row time-block">
-      <div class="hour col-3">
-        <p class="scheduleHours" id="15">3:00 pm</p>
+      <div class="hour col-3 scheduleHours" id="15">
+        <p>3:00 pm</p>
       </div>
-      <input name="task" class="col-7" placeholder="Schedule input">
-      <button type="button" class="saveBtn col-2">💾</button>
+      <textarea class="taskText form-label col-7 border-top border-dark" placeholder="Schedule input"></textarea>
+      <button type="button" title="3pm" class="saveBtn col-2 pt-2 fa-solid fa-floppy-disk fa-3x"></button>
     </div>
+
     <div class="row time-block">
-      <div class="hour col-3">
-        <p class="scheduleHours" id="16">4:00 pm</p>
+      <div class="hour col-3 scheduleHours" id="16">
+        <p>4:00 pm</p>
       </div>
-      <input name="task" class="col-7" placeholder="Schedule input">
-      <button type="button" class="saveBtn col-2">💾</button>
+      <textarea class="taskText form-label col-7 border-top border-dark" placeholder="Schedule input"></textarea>
+      <button type="button" title="4pm" class="saveBtn col-2 pt-2 fa-solid fa-floppy-disk fa-3x"></button>
     </div>
+
     <div class="row time-block">
-      <div class="hour col-3">
-        <p class="scheduleHours" id="17">5:00 pm</p>
+      <div class="hour col-3 scheduleHours" id="17">
+        <p>5:00 pm</p>
       </div>
-      <input name="task" class="col-7" placeholder="Schedule input">
-      <button type="button" class="saveBtn col-2">💾</button>
+      <textarea class="taskText form-label col-7 border-top border-dark" placeholder="Schedule input"></textarea>
+      <button type="button" title="5pm" class="saveBtn col-2 pt-2 fa-solid fa-floppy-disk fa-3x"> </button>
     </div>
+
     <div class="row time-block">
-      <div class="hour col-3">
-        <p class="scheduleHours" id="18">6:00 pm</p>
+      <div class="hour col-3 scheduleHours" id="18">
+        <p>6:00 pm</p>
       </div>
-      <input name="task" class="col-7" placeholder="Schedule input">
-      <button type="button" class="saveBtn col-2">💾</button>
+      <textarea class="taskText form-label col-7 border-top border-bottom border-dark"
+        placeholder="Schedule input"></textarea>
+      <button type="button" title="6pm" class="saveBtn col-2 pt-2 fa-solid fa-floppy-disk fa-3x"></button>
     </div>
 
   </div>

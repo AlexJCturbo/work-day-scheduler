@@ -33,7 +33,7 @@ var loadScheduleTasks = function () {
     //console.log(list, arr);
     arr.forEach(function (task) {
       loadRecords(task.hour, task.text, list);
-      console.log(task.hour, task.text, list)
+      //console.log(task.hour, task.text, list)
     });
   });
 };
@@ -44,84 +44,6 @@ var loadRecords = function (entryHour, entryText) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var index = $(this).closest(".list-group-item").index();
-
-//Seting color depending on the hour
-function setTaskColour() {
-  var currentHour = moment().format("HH")
-  //console.log(currentHour);
-
-  $('.time-block .scheduleHours').each(function () {
-
-  })
-
-    .attr('id').val().trim();
-  hourPeriod = parseInt(hourPeriod);
-
-  var changeColours = $(this).children('.taskTaxt');
-  //console.log(changeColours);
-  //console.log(hourPeriod, currentHour);
-  // var scheduleHour = $(this).attr("data-time");
-  // scheduleHour = parseInt(scheduleHour);
-
-  // $('.scheduleHours').each(function(){
-
-  // })
-
-  //$('input[name="task"]')
-
-  // $('.scheduleHours').each(function () {
-  //   var scheduleHour = $(this).attr("id").text().trim();
-  //   console.log(scheduleHour)
-  // });
-};
-
-//setInterval(setTaskColour, (1000 * 5));
-
-
-
-
-
-
-
-
-
-
-
-// $('.task').sortable({
-//   connectWith: $('.card .list-group'),
-//   scroll: false,
-//   tolerance: "pointer",
-//   helper: "clone",
-//   activate: function (event) {
-//     $(this).addClass('dropover')
-//     $('.bottom-trash').addClass('bottom-trash-drag')
-//   },
-//   deactivate: function (event) {
-//     $(this).removeClass('dropover')
-//     $('.bottom-trash').removeClass('bottom-trash-drag')
-//   },
-//   over: function (event) {
-//     $(event.target).addClass('dropover-active')
-//   },
-//   out: function (event) {
-//     $(event.target).removeClass('dropover-active')
-//   },
-// })
-
 loadScheduleTasks();
+setTaskColour()
 setInterval(dateTimeHeader, 1000);
