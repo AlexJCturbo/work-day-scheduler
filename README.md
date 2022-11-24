@@ -23,7 +23,11 @@ SO THAT I can manage my time effectively
 
 
 ## Screen Captures
-![Scheduler 01 main](./utils/images/text_editor_01_main.png)
+![Scheduler 01 main](./utils/images/scheduler_01_main.png)
+
+![Scheduler 02 adding task](./utils/images/scheduler_02_add_task.png)
+
+![Scheduler 03 responsive design](./utils/images/scheduler_03_responsive.png)
 ###### [Back to Index](#Table-of-Contents)
 
 
