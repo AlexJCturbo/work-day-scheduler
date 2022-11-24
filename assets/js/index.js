@@ -42,8 +42,27 @@ var loadRecords = function (entryHour, entryText) {
   $("#" + entryHour).siblings('.taskText').text(entryText);
 }
 
+//Change colour
+function setTaskColour() {
+  var actualHour = moment().format("HH")
+  console.log(actualHour);
 
+  $('.scheduleHours').each(function () {
+    var schedulerHours = $(this).attr('id');
+    var colourArea = $(this).siblings('.taskText')
+    //console.log(schedulerHours, colourArea)
+
+    if (schedulerHours < actualHour) {
+      colourArea.addClass('bg-secondary text-light');
+    } else if (schedulerHours === actualHour) {
+      colourArea.addClass('bg-danger text-light')
+    } else {
+      colourArea.addClass('bg-success text-light')
+    }
+  })
+};
 
 loadScheduleTasks();
 setTaskColour()
 setInterval(dateTimeHeader, 1000);
+setInterval(setTaskColour, (1000 * 20));
